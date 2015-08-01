@@ -4,6 +4,7 @@
             console.log(2);
         }])
         .controller('PasswordController', ['$scope', function($scope){
+			$scope.temp = 'temp';
             $scope.password = '';
             $scope.grade = function (){
                 var size = $scope.password.length;

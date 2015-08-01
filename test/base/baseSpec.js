@@ -12,7 +12,7 @@ describe('PasswordController', function() {
         it('sets the strength to "strong" if the password length is >8 chars', function() {
             var $scope = {};
             var controller = $controller('PasswordController', { $scope: $scope });
-            $scope.password = 'longerthaneightchars';
+            $scope.password = 'longerthaneightchars55';
             $scope.grade();
             expect($scope.strength).toEqual('strong');
         });
